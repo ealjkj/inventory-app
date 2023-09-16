@@ -11,4 +11,8 @@ target 'inventoryReplica' do
   pod 'Floaty', '~> 4.2.0'
   pod 'SwipeCellKit'
 
+target 'inventoryReplicaTests' do
+    pod 'Firebase/Core'
+  end
+
 end

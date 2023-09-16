@@ -138,7 +138,7 @@ extension ItemsViewController : UITableViewDataSource {
         let endIndex = min(firstIndex + pageSize, items.count)
         let pageItems = items[firstIndex..<endIndex]
         let item = pageItems[firstIndex+indexPath.row]
-        cell.titleLabel.text = item.name
+        cell.configure(with: item)
         
         return cell
     }

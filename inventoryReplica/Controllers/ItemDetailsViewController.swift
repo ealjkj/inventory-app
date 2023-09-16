@@ -47,7 +47,7 @@ class ItemDetailsViewController : UIViewController {
         lastUpdateLabel.text = item.updatedAt.formatted()
 
         if item.images.count != 0 {
-            itemImage.image = item.images[0]
+            itemImage.image = item.images.first
         }
 
         if let minLevel = item.minLevel {

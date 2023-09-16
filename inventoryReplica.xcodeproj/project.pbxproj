@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18AE81DE2AB4DBA80073AEB2 /* inventoryReplicaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AE81DD2AB4DBA80073AEB2 /* inventoryReplicaTests.swift */; };
+		18AE81E52AB4DDFB0073AEB2 /* AuthValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AE81E42AB4DDFB0073AEB2 /* AuthValidation.swift */; };
+		18AE81E72AB4DE7F0073AEB2 /* AuthValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AE81E62AB4DE7F0073AEB2 /* AuthValidator.swift */; };
+		18AE81E92AB5072E0073AEB2 /* FirebaseAppCheckInterop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18AE81E82AB5072E0073AEB2 /* FirebaseAppCheckInterop.framework */; };
+		18AE81EB2AB5072E0073AEB2 /* FirebaseAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18AE81EA2AB5072E0073AEB2 /* FirebaseAuth.framework */; };
+		18AE81ED2AB5072E0073AEB2 /* FirebaseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18AE81EC2AB5072E0073AEB2 /* FirebaseCore.framework */; };
+		18AE81EF2AB5072E0073AEB2 /* FirebaseCoreInternal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18AE81EE2AB5072E0073AEB2 /* FirebaseCoreInternal.framework */; };
+		18AE81F12AB5072E0073AEB2 /* FirebaseFirestore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18AE81F02AB5072E0073AEB2 /* FirebaseFirestore.framework */; };
+		548D6A0386F979C631DB7940 /* Pods_inventoryReplica.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 840FD96A4996F18F5A51FEB4 /* Pods_inventoryReplica.framework */; };
+		74695DC00D11F70A2A9D140B /* Pods_inventoryReplica_inventoryReplicaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F45D05F598A7222A0E7D539F /* Pods_inventoryReplica_inventoryReplicaTests.framework */; };
 		B517B7802A43D6B400F396A2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B517B77F2A43D6B400F396A2 /* GoogleService-Info.plist */; };
 		B552F4512A5BB68F00CF342D /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = B552F4502A5BB68F00CF342D /* Item.swift */; };
 		B552F4542A5BCC4300CF342D /* ItemFolderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B552F4522A5BCC4300CF342D /* ItemFolderCell.swift */; };
@@ -24,7 +34,6 @@
 		B58029462A3C5FF70085D369 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B58029442A3C5FF70085D369 /* LaunchScreen.storyboard */; };
 		B599C9E92A5FD65600D49B65 /* ItemsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B599C9E82A5FD65600D49B65 /* ItemsManager.swift */; };
 		B5A3BECB2A6F4A5800DCA44E /* DasboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A3BECA2A6F4A5800DCA44E /* DasboardViewController.swift */; };
-		B5ACB3F52A4A1AD60050AAB4 /* inventoryReplicaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ACB3F42A4A1AD60050AAB4 /* inventoryReplicaTests.swift */; };
 		B5B73FC92A689CE10013FFA6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B73FC82A689CE10013FFA6 /* Constants.swift */; };
 		B5BAC4342A5F025200808D98 /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BAC4332A5F025200808D98 /* AddItemViewController.swift */; };
 		B5C7853D2A7031FD00B30052 /* ItemDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C7853C2A7031FD00B30052 /* ItemDetailsViewController.swift */; };
@@ -43,11 +52,10 @@
 		B5C7855D2A73F60000B30052 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C7855C2A73F60000B30052 /* Settings.swift */; };
 		B5C7855F2A73F9E700B30052 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C7855E2A73F9E700B30052 /* SettingsViewController.swift */; };
 		B5FB650F2A58BEF500C7C9A7 /* ItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FB650E2A58BEF500C7C9A7 /* ItemsViewController.swift */; };
-		F4D77598CDE992366135D2AC /* Pods_inventoryReplica.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF173DECB80D7681EE234FAA /* Pods_inventoryReplica.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		B5ACB3F62A4A1AD60050AAB4 /* PBXContainerItemProxy */ = {
+		18AE81DF2AB4DBA80073AEB2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B580292E2A3C5FF50085D369 /* Project object */;
 			proxyType = 1;
@@ -57,7 +65,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		52A2C6370096C3EE2A026249 /* Pods-inventoryReplica.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-inventoryReplica.release.xcconfig"; path = "Target Support Files/Pods-inventoryReplica/Pods-inventoryReplica.release.xcconfig"; sourceTree = "<group>"; };
+		18AE81DB2AB4DBA80073AEB2 /* inventoryReplicaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = inventoryReplicaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18AE81DD2AB4DBA80073AEB2 /* inventoryReplicaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = inventoryReplicaTests.swift; sourceTree = "<group>"; };
+		18AE81E42AB4DDFB0073AEB2 /* AuthValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthValidation.swift; sourceTree = "<group>"; };
+		18AE81E62AB4DE7F0073AEB2 /* AuthValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthValidator.swift; sourceTree = "<group>"; };
+		18AE81E82AB5072E0073AEB2 /* FirebaseAppCheckInterop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseAppCheckInterop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		18AE81EA2AB5072E0073AEB2 /* FirebaseAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		18AE81EC2AB5072E0073AEB2 /* FirebaseCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		18AE81EE2AB5072E0073AEB2 /* FirebaseCoreInternal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseCoreInternal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		18AE81F02AB5072E0073AEB2 /* FirebaseFirestore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseFirestore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		632A46EF465FA787E890A7E6 /* Pods-inventoryReplica.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-inventoryReplica.debug.xcconfig"; path = "Target Support Files/Pods-inventoryReplica/Pods-inventoryReplica.debug.xcconfig"; sourceTree = "<group>"; };
+		840FD96A4996F18F5A51FEB4 /* Pods_inventoryReplica.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_inventoryReplica.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B517B77F2A43D6B400F396A2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B552F4502A5BB68F00CF342D /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		B552F4522A5BCC4300CF342D /* ItemFolderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemFolderCell.swift; sourceTree = "<group>"; };
@@ -77,8 +95,6 @@
 		B58029472A3C5FF70085D369 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B599C9E82A5FD65600D49B65 /* ItemsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsManager.swift; sourceTree = "<group>"; };
 		B5A3BECA2A6F4A5800DCA44E /* DasboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DasboardViewController.swift; sourceTree = "<group>"; };
-		B5ACB3F22A4A1AD60050AAB4 /* inventoryReplicaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = inventoryReplicaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B5ACB3F42A4A1AD60050AAB4 /* inventoryReplicaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = inventoryReplicaTests.swift; sourceTree = "<group>"; };
 		B5B73FC82A689CE10013FFA6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B5BAC4332A5F025200808D98 /* AddItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
 		B5C7853C2A7031FD00B30052 /* ItemDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailsViewController.swift; sourceTree = "<group>"; };
@@ -97,44 +113,55 @@
 		B5C7855C2A73F60000B30052 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		B5C7855E2A73F9E700B30052 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		B5FB650E2A58BEF500C7C9A7 /* ItemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsViewController.swift; sourceTree = "<group>"; };
-		CF173DECB80D7681EE234FAA /* Pods_inventoryReplica.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_inventoryReplica.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D88A92E8B7B9473EF2523419 /* Pods-inventoryReplica.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-inventoryReplica.debug.xcconfig"; path = "Target Support Files/Pods-inventoryReplica/Pods-inventoryReplica.debug.xcconfig"; sourceTree = "<group>"; };
+		C91EDF0F414F37EA68E3C843 /* Pods-inventoryReplica-inventoryReplicaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-inventoryReplica-inventoryReplicaTests.debug.xcconfig"; path = "Target Support Files/Pods-inventoryReplica-inventoryReplicaTests/Pods-inventoryReplica-inventoryReplicaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DB06E172071C956DBDE4F88A /* Pods-inventoryReplica-inventoryReplicaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-inventoryReplica-inventoryReplicaTests.release.xcconfig"; path = "Target Support Files/Pods-inventoryReplica-inventoryReplicaTests/Pods-inventoryReplica-inventoryReplicaTests.release.xcconfig"; sourceTree = "<group>"; };
+		F45D05F598A7222A0E7D539F /* Pods_inventoryReplica_inventoryReplicaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_inventoryReplica_inventoryReplicaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFFD6490D7BE29690B695886 /* Pods-inventoryReplica.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-inventoryReplica.release.xcconfig"; path = "Target Support Files/Pods-inventoryReplica/Pods-inventoryReplica.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		18AE81D82AB4DBA80073AEB2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18AE81E92AB5072E0073AEB2 /* FirebaseAppCheckInterop.framework in Frameworks */,
+				18AE81F12AB5072E0073AEB2 /* FirebaseFirestore.framework in Frameworks */,
+				18AE81EF2AB5072E0073AEB2 /* FirebaseCoreInternal.framework in Frameworks */,
+				18AE81EB2AB5072E0073AEB2 /* FirebaseAuth.framework in Frameworks */,
+				18AE81ED2AB5072E0073AEB2 /* FirebaseCore.framework in Frameworks */,
+				74695DC00D11F70A2A9D140B /* Pods_inventoryReplica_inventoryReplicaTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B58029332A3C5FF50085D369 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4D77598CDE992366135D2AC /* Pods_inventoryReplica.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B5ACB3EF2A4A1AD60050AAB4 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				548D6A0386F979C631DB7940 /* Pods_inventoryReplica.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18AE81DC2AB4DBA80073AEB2 /* inventoryReplicaTests */ = {
+			isa = PBXGroup;
+			children = (
+				18AE81DD2AB4DBA80073AEB2 /* inventoryReplicaTests.swift */,
+				18AE81E42AB4DDFB0073AEB2 /* AuthValidation.swift */,
+			);
+			path = inventoryReplicaTests;
+			sourceTree = "<group>";
+		};
 		276C97CCB20B8DF4391CCEF8 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				D88A92E8B7B9473EF2523419 /* Pods-inventoryReplica.debug.xcconfig */,
-				52A2C6370096C3EE2A026249 /* Pods-inventoryReplica.release.xcconfig */,
+				632A46EF465FA787E890A7E6 /* Pods-inventoryReplica.debug.xcconfig */,
+				FFFD6490D7BE29690B695886 /* Pods-inventoryReplica.release.xcconfig */,
+				C91EDF0F414F37EA68E3C843 /* Pods-inventoryReplica-inventoryReplicaTests.debug.xcconfig */,
+				DB06E172071C956DBDE4F88A /* Pods-inventoryReplica-inventoryReplicaTests.release.xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		3857E24A7551687389A3832C /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				CF173DECB80D7681EE234FAA /* Pods_inventoryReplica.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		B552F44F2A5BB66F00CF342D /* Models */ = {
@@ -146,6 +173,7 @@
 				B5C785522A72803B00B30052 /* PubSub.swift */,
 				B5C785542A72A48A00B30052 /* NotificationManager.swift */,
 				B5C7855C2A73F60000B30052 /* Settings.swift */,
+				18AE81E62AB4DE7F0073AEB2 /* AuthValidator.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -189,10 +217,10 @@
 			isa = PBXGroup;
 			children = (
 				B58029382A3C5FF50085D369 /* inventoryReplica */,
-				B5ACB3F32A4A1AD60050AAB4 /* inventoryReplicaTests */,
+				18AE81DC2AB4DBA80073AEB2 /* inventoryReplicaTests */,
 				B58029372A3C5FF50085D369 /* Products */,
 				276C97CCB20B8DF4391CCEF8 /* Pods */,
-				3857E24A7551687389A3832C /* Frameworks */,
+				BEE930316FD59944281ADA06 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -200,7 +228,7 @@
 			isa = PBXGroup;
 			children = (
 				B58029362A3C5FF50085D369 /* inventoryReplica.app */,
-				B5ACB3F22A4A1AD60050AAB4 /* inventoryReplicaTests.xctest */,
+				18AE81DB2AB4DBA80073AEB2 /* inventoryReplicaTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -224,14 +252,6 @@
 			path = inventoryReplica;
 			sourceTree = "<group>";
 		};
-		B5ACB3F32A4A1AD60050AAB4 /* inventoryReplicaTests */ = {
-			isa = PBXGroup;
-			children = (
-				B5ACB3F42A4A1AD60050AAB4 /* inventoryReplicaTests.swift */,
-			);
-			path = inventoryReplicaTests;
-			sourceTree = "<group>";
-		};
 		B5C785422A71F40400B30052 /* Styles */ = {
 			isa = PBXGroup;
 			children = (
@@ -240,18 +260,52 @@
 			path = Styles;
 			sourceTree = "<group>";
 		};
+		BEE930316FD59944281ADA06 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18AE81E82AB5072E0073AEB2 /* FirebaseAppCheckInterop.framework */,
+				18AE81EA2AB5072E0073AEB2 /* FirebaseAuth.framework */,
+				18AE81EC2AB5072E0073AEB2 /* FirebaseCore.framework */,
+				18AE81EE2AB5072E0073AEB2 /* FirebaseCoreInternal.framework */,
+				18AE81F02AB5072E0073AEB2 /* FirebaseFirestore.framework */,
+				840FD96A4996F18F5A51FEB4 /* Pods_inventoryReplica.framework */,
+				F45D05F598A7222A0E7D539F /* Pods_inventoryReplica_inventoryReplicaTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		18AE81DA2AB4DBA80073AEB2 /* inventoryReplicaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18AE81E12AB4DBA80073AEB2 /* Build configuration list for PBXNativeTarget "inventoryReplicaTests" */;
+			buildPhases = (
+				12FEA926428EF6FE2BC8F6B8 /* [CP] Check Pods Manifest.lock */,
+				18AE81D72AB4DBA80073AEB2 /* Sources */,
+				18AE81D82AB4DBA80073AEB2 /* Frameworks */,
+				18AE81D92AB4DBA80073AEB2 /* Resources */,
+				771B0E5E7BBE908916611706 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18AE81E02AB4DBA80073AEB2 /* PBXTargetDependency */,
+			);
+			name = inventoryReplicaTests;
+			productName = inventoryReplicaTests;
+			productReference = 18AE81DB2AB4DBA80073AEB2 /* inventoryReplicaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		B58029352A3C5FF50085D369 /* inventoryReplica */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B580294A2A3C5FF70085D369 /* Build configuration list for PBXNativeTarget "inventoryReplica" */;
 			buildPhases = (
-				88710EBC28F2CFEA5878C1EB /* [CP] Check Pods Manifest.lock */,
+				835CDE1EFC331FF599D49757 /* [CP] Check Pods Manifest.lock */,
 				B58029322A3C5FF50085D369 /* Sources */,
 				B58029332A3C5FF50085D369 /* Frameworks */,
 				B58029342A3C5FF50085D369 /* Resources */,
-				798D2DD7D64CE2B070C44235 /* [CP] Embed Pods Frameworks */,
+				559AF3FC7352F1351296EFF1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -262,24 +316,6 @@
 			productReference = B58029362A3C5FF50085D369 /* inventoryReplica.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B5ACB3F12A4A1AD60050AAB4 /* inventoryReplicaTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B5ACB3FA2A4A1AD60050AAB4 /* Build configuration list for PBXNativeTarget "inventoryReplicaTests" */;
-			buildPhases = (
-				B5ACB3EE2A4A1AD60050AAB4 /* Sources */,
-				B5ACB3EF2A4A1AD60050AAB4 /* Frameworks */,
-				B5ACB3F02A4A1AD60050AAB4 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B5ACB3F72A4A1AD60050AAB4 /* PBXTargetDependency */,
-			);
-			name = inventoryReplicaTests;
-			productName = inventoryReplicaTests;
-			productReference = B5ACB3F22A4A1AD60050AAB4 /* inventoryReplicaTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -287,15 +323,15 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1400;
+				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
+					18AE81DA2AB4DBA80073AEB2 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = B58029352A3C5FF50085D369;
+					};
 					B58029352A3C5FF50085D369 = {
 						CreatedOnToolsVersion = 14.0.1;
-					};
-					B5ACB3F12A4A1AD60050AAB4 = {
-						CreatedOnToolsVersion = 14.0.1;
-						TestTargetID = B58029352A3C5FF50085D369;
 					};
 				};
 			};
@@ -313,12 +349,19 @@
 			projectRoot = "";
 			targets = (
 				B58029352A3C5FF50085D369 /* inventoryReplica */,
-				B5ACB3F12A4A1AD60050AAB4 /* inventoryReplicaTests */,
+				18AE81DA2AB4DBA80073AEB2 /* inventoryReplicaTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		18AE81D92AB4DBA80073AEB2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B58029342A3C5FF50085D369 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -334,17 +377,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B5ACB3F02A4A1AD60050AAB4 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		798D2DD7D64CE2B070C44235 /* [CP] Embed Pods Frameworks */ = {
+		12FEA926428EF6FE2BC8F6B8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-inventoryReplica-inventoryReplicaTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		559AF3FC7352F1351296EFF1 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -361,7 +419,24 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-inventoryReplica/Pods-inventoryReplica-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		88710EBC28F2CFEA5878C1EB /* [CP] Check Pods Manifest.lock */ = {
+		771B0E5E7BBE908916611706 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-inventoryReplica-inventoryReplicaTests/Pods-inventoryReplica-inventoryReplicaTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-inventoryReplica-inventoryReplicaTests/Pods-inventoryReplica-inventoryReplicaTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-inventoryReplica-inventoryReplicaTests/Pods-inventoryReplica-inventoryReplicaTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		835CDE1EFC331FF599D49757 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -386,6 +461,15 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		18AE81D72AB4DBA80073AEB2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18AE81E52AB4DDFB0073AEB2 /* AuthValidation.swift in Sources */,
+				18AE81DE2AB4DBA80073AEB2 /* inventoryReplicaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B58029322A3C5FF50085D369 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -396,6 +480,7 @@
 				B5C7853D2A7031FD00B30052 /* ItemDetailsViewController.swift in Sources */,
 				B57568EE2A5633CA001AB0AB /* SignupViewController.swift in Sources */,
 				B5C785532A72803B00B30052 /* PubSub.swift in Sources */,
+				18AE81E72AB4DE7F0073AEB2 /* AuthValidator.swift in Sources */,
 				B57EACC52A4E036500D4A06A /* LoginViewController.swift in Sources */,
 				B552F4542A5BCC4300CF342D /* ItemFolderCell.swift in Sources */,
 				B5BAC4342A5F025200808D98 /* AddItemViewController.swift in Sources */,
@@ -420,21 +505,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B5ACB3EE2A4A1AD60050AAB4 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B5ACB3F52A4A1AD60050AAB4 /* inventoryReplicaTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		B5ACB3F72A4A1AD60050AAB4 /* PBXTargetDependency */ = {
+		18AE81E02AB4DBA80073AEB2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = B58029352A3C5FF50085D369 /* inventoryReplica */;
-			targetProxy = B5ACB3F62A4A1AD60050AAB4 /* PBXContainerItemProxy */;
+			targetProxy = 18AE81DF2AB4DBA80073AEB2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -458,6 +535,62 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		18AE81E22AB4DBA80073AEB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C91EDF0F414F37EA68E3C843 /* Pods-inventoryReplica-inventoryReplicaTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				"HEADER_SEARCH_PATHS[arch=*]" = (
+					HEADER_SEARCH_PATHS,
+					"=",
+					"\"${SRCROOT}/Pods/Firebase/CoreOnly/Sources\"",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				"OTHER_LDFLAGS[sdk=*]" = (
+					"$(OTHER_LDFLAGS)",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ealjkj.inventoryReplicaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/inventoryReplica.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/inventoryReplica";
+			};
+			name = Debug;
+		};
+		18AE81E32AB4DBA80073AEB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB06E172071C956DBDE4F88A /* Pods-inventoryReplica-inventoryReplicaTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				"HEADER_SEARCH_PATHS[arch=*]" = (
+					HEADER_SEARCH_PATHS,
+					"=",
+					"\"${SRCROOT}/Pods/Firebase/CoreOnly/Sources\"",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				"OTHER_LDFLAGS[arch=*]" = (
+					"$(OTHER_LDFLAGS)",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ealjkj.inventoryReplicaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/inventoryReplica.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/inventoryReplica";
+			};
+			name = Release;
+		};
 		B58029482A3C5FF70085D369 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -574,7 +707,7 @@
 		};
 		B580294B2A3C5FF70085D369 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D88A92E8B7B9473EF2523419 /* Pods-inventoryReplica.debug.xcconfig */;
+			baseConfigurationReference = 632A46EF465FA787E890A7E6 /* Pods-inventoryReplica.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -602,7 +735,7 @@
 		};
 		B580294C2A3C5FF70085D369 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 52A2C6370096C3EE2A026249 /* Pods-inventoryReplica.release.xcconfig */;
+			baseConfigurationReference = FFFD6490D7BE29690B695886 /* Pods-inventoryReplica.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -628,43 +761,18 @@
 			};
 			name = Release;
 		};
-		B5ACB3F82A4A1AD60050AAB4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ealjkj.inventoryReplicaTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/inventoryReplica.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/inventoryReplica";
-			};
-			name = Debug;
-		};
-		B5ACB3F92A4A1AD60050AAB4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ealjkj.inventoryReplicaTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/inventoryReplica.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/inventoryReplica";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		18AE81E12AB4DBA80073AEB2 /* Build configuration list for PBXNativeTarget "inventoryReplicaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18AE81E22AB4DBA80073AEB2 /* Debug */,
+				18AE81E32AB4DBA80073AEB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B58029312A3C5FF50085D369 /* Build configuration list for PBXProject "inventoryReplica" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -679,15 +787,6 @@
 			buildConfigurations = (
 				B580294B2A3C5FF70085D369 /* Debug */,
 				B580294C2A3C5FF70085D369 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B5ACB3FA2A4A1AD60050AAB4 /* Build configuration list for PBXNativeTarget "inventoryReplicaTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B5ACB3F82A4A1AD60050AAB4 /* Debug */,
-				B5ACB3F92A4A1AD60050AAB4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

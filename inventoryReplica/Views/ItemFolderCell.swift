@@ -28,4 +28,13 @@ class ItemFolderCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    func configure(with item : Item) {
+        if let image = item.images.first {
+            itemImageView.image = image
+        }
+        
+        titleLabel.text = item.name
+    }
+    
+    
 }

@@ -19,6 +19,10 @@ class ItemCollectionViewCell: UICollectionViewCell {
     }
 
     func configure(with item: Item) {
+        if let image = item.images.first {
+            itemImageView.image = image
+        }
+        
         idLabel.text = item.sortlyId
         nameLabel.text = item.name
         unitsLabel.text = "\(item.quantity) units"

@@ -18,6 +18,7 @@ class AddItemViewController: UIViewController {
     @IBOutlet weak var priceTextField: UITextField!
     @IBOutlet weak var totalValue: UILabel!
     var delegate: AddItemsDelegate?
+    var itemImage : UIImage?
     
     let db = Firestore.firestore()
     
@@ -42,11 +43,16 @@ class AddItemViewController: UIViewController {
 }
     
     @IBAction func saveItemPressed(_ sender: UIBarButtonItem) {
+        var images : [UIImage] = []
+        if let image = itemImage {
+            images = [image]
+        }
+
         
         let newItem = Item(
             name: nameTextField.text!,
             quantity: Int(quantityTextField.text!) ?? 0,
-            images: [],
+            images: images,
             minLevel: Int(minLevelTextField.text!),
             price: Float(priceTextField.text!),
             totalValue: nil,
@@ -71,6 +77,13 @@ class AddItemViewController: UIViewController {
                 "price": item.price as Any,
                 "notes": item.notes as Any,
                 "tags": item.tags as Any,
+                "images" : item.images.compactMap { image in
+                    if let resizedImageData = image.resized(toWidth: 64)?.jpegData(compressionQuality: 0.7) {
+                        return resizedImageData
+                    } else {
+                        return nil
+                    }
+                },
                 "sortlyId": item.sortlyId as Any,
                 "createdAt": item.createdAt as Any,
                 "updatedAt": item.updatedAt as Any
@@ -119,11 +132,10 @@ class AddItemViewController: UIViewController {
 
 extension AddItemViewController : UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        print("info", info[.originalImage])
+                
         if let image = info[.originalImage] as? UIImage {
+            itemImage = image
             addPhotoButton.setBackgroundImage(image, for: .normal)
-            
-//            addPhotoButton.backgroundColor = UIColor(patternImage: image)
               }
         picker.dismiss(animated: true, completion: nil)
     }
@@ -133,4 +145,15 @@ extension AddItemViewController : UIImagePickerControllerDelegate, UINavigationC
 
 protocol AddItemsDelegate {
     func didUpdateData()
+}
+
+
+extension UIImage {
+    func resized(toWidth width: CGFloat) -> UIImage? {
+        let newSize = CGSize(width: width, height: CGFloat(ceil(width / size.width * size.height)))
+        UIGraphicsBeginImageContextWithOptions(newSize, false, 0.0)
+        defer { UIGraphicsEndImageContext() }
+        draw(in: CGRect(origin: .zero, size: newSize))
+        return UIGraphicsGetImageFromCurrentImageContext()
+    }
 }

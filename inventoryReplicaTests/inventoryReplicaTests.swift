@@ -2,10 +2,13 @@
 //  inventoryReplicaTests.swift
 //  inventoryReplicaTests
 //
-//  Created by ANGÉLICA ROSADO on 26/06/23.
+//  Created by intekglobal02 on 9/15/23.
 //
 
 import XCTest
+import Firebase
+@testable import inventoryReplica
+
 
 final class inventoryReplicaTests: XCTestCase {
 
