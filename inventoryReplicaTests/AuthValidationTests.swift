@@ -6,8 +6,6 @@
 //
 
 import XCTest
-@testable import inventoryReplica
-
 
 final class AuthValidation: XCTestCase {
     

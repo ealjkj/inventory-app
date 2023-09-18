@@ -148,7 +148,7 @@ extension ItemsViewController : UITableViewDataSource {
 
 extension ItemsViewController : UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let item = ItemManager.items[indexPath.row]
+        let item = ItemManager.items[currentPage*pageSize + indexPath.row]
         currentItem = item
         self.performSegue(withIdentifier: "ItemsToItemDetails", sender: self)
     }

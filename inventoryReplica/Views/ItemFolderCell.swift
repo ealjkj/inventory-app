@@ -31,6 +31,8 @@ class ItemFolderCell: UITableViewCell {
     func configure(with item : Item) {
         if let image = item.images.first {
             itemImageView.image = image
+        } else {
+            itemImageView.image = UIImage(systemName: "doc.fill")
         }
         
         titleLabel.text = item.name

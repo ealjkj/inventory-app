@@ -40,7 +40,9 @@ struct ItemManager {
     static func queryItems(completion: @escaping ([Item]) -> Void) {
         print("loading items")
         
-        db.collection(K.FStore.itemsCollectionName).addSnapshotListener { querySnapshot, error in
+        db.collection(K.FStore.itemsCollectionName)
+            .order(by: "updatedAt", descending: true)
+            .addSnapshotListener { querySnapshot, error in
             if let error = error {
                 print(error)
             } else {
@@ -48,8 +50,6 @@ struct ItemManager {
                 if let snapshotsDocuments = querySnapshot?.documents {
                     for doc in snapshotsDocuments {
                         let data = doc.data()
-                        
-                        
                         if let name = data["name"] as? String,
                             let quantity = data["quantity"] as? Int,
                             let sortlyId = data["sortlyId"] as? String,

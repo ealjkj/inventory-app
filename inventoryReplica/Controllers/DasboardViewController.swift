@@ -10,15 +10,15 @@ import Firebase
 
 class DashboardViewController : UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
-    
     @IBOutlet weak var itemsLabel : UILabel!
     @IBOutlet weak var foldersLabel : UILabel!
     @IBOutlet weak var totalQtyLabel : UILabel!
     @IBOutlet weak var totalPricelabel : UILabel!
-    
+     
     let db = Firestore.firestore()
     let numOfRecentItems = 5
     var currentItem : Item?
+    
     
     override func viewDidLoad() {
         let nib = UINib(nibName: "ItemCollectionViewCell", bundle: nil)
@@ -85,8 +85,7 @@ extension DashboardViewController : UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let sortedItemList = ItemManager.items.sorted(by: { $0.createdAt > $1.createdAt })
-        let mostRecentItems = Array(sortedItemList.prefix(numOfRecentItems))
+        let mostRecentItems = Array(ItemManager.items.prefix(numOfRecentItems))
         
         let item = mostRecentItems[indexPath.row]
         
