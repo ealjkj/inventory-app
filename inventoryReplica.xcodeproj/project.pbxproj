@@ -59,8 +59,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		18AE81DD2AB4DBA80073AEB2 /* inventoryReplicaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = inventoryReplicaTests.swift; sourceTree = "<group>"; };
-		18AE81E42AB4DDFB0073AEB2 /* AuthValidationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthValidationTests.swift; sourceTree = "<group>"; };
 		18AE81E62AB4DE7F0073AEB2 /* AuthValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthValidator.swift; sourceTree = "<group>"; };
 		18AE81E82AB5072E0073AEB2 /* FirebaseAppCheckInterop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseAppCheckInterop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		18AE81EA2AB5072E0073AEB2 /* FirebaseAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -133,15 +131,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		18AE81DC2AB4DBA80073AEB2 /* inventoryReplicaTests */ = {
-			isa = PBXGroup;
-			children = (
-				18AE81DD2AB4DBA80073AEB2 /* inventoryReplicaTests.swift */,
-				18AE81E42AB4DDFB0073AEB2 /* AuthValidationTests.swift */,
-			);
-			path = inventoryReplicaTests;
-			sourceTree = "<group>";
-		};
 		18B114B62AB8C5D500AB91FD /* validatorTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -214,7 +203,6 @@
 			isa = PBXGroup;
 			children = (
 				B58029382A3C5FF50085D369 /* inventoryReplica */,
-				18AE81DC2AB4DBA80073AEB2 /* inventoryReplicaTests */,
 				18B114B62AB8C5D500AB91FD /* validatorTests */,
 				B58029372A3C5FF50085D369 /* Products */,
 				276C97CCB20B8DF4391CCEF8 /* Pods */,
